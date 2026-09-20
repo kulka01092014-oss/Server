@@ -1,0 +1,253 @@
+:root {
+  --background-color: #3777b0; /* Темно-фіолетовий фон */
+   --card-bg: rgba(255, 255, 255, 0.05);
+   --accent-pink: #d900ff;
+   --accent-purple: #8a2be2;
+   --color: #ffffff;
+   --border-color: #7b4fa3;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpiEmoC_pAhNgBPIoKGI8XIcqIf-eq68Cw4aPYfwNtvaMlN6uN") ;
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   color:#3777b0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+    text-align: center;
+}
+
+
+header {
+   text-align: center;
+   padding: 40px 20px;
+}
+
+.header-title {
+   font-size: 2.5rem;
+   color: #3777b0;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+   
+   
+}
+
+.header-subtitle {
+   font-size: 1rem;
+   color:#3777b0;
+   line-height: 1.5;
+   border-bottom: 1px solid #3777b0;
+}
+
+.highlight-text {
+   color: #663b1f;
+}
+
+/* --- Main Content --- */
+.main-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   padding: 20px;
+   flex-grow: 1;
+   flex-wrap: wrap; /* Для мобільних пристроїв */
+}
+
+/* --- Ліва частина (Картинка) --- */
+.image-card {
+   width: 530px;
+
+   height: 600px;
+   padding: 0%;
+   border-radius: 40px;
+   overflow: hidden;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.5);    
+}
+
+.image-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* --- Права частина (Форма) --- */
+.form-card {
+   background-color: transparent;
+   border: 2px solid #663b1f;
+   border-radius: 40px;
+   padding: 40px;
+   width: 600px;
+   box-shadow: 0 0 20px rgba(138, 43, 226, 0.2);
+   margin: auto;
+
+}
+
+.form-card h2 {
+   font-size: 1.8rem;
+   margin-bottom: 30px;
+   font-weight: 400;
+}
+
+.form-group {
+   margin-bottom: 20px;
+   color:#2038df;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 8px;
+   font-size: 0.9rem;
+   color:#2038df;
+  
+}
+
+.input-wrapper {
+   position: relative;
+}
+
+.input-wrapper i {
+   position: absolute;
+   left: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #43ed81;
+}
+
+.input-wrapper input {
+   width: 100%;
+   background: transparent;
+   border: 1px solid #663b1f;
+   border-radius: 12px;
+   padding: 12px 12px 12px 45px; /* Відступ зліва для іконки */
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.3s;
+   color:#79f263;
+}
+
+.input-wrapper input::placeholder {
+   color: #43ed81;
+}
+
+.input-wrapper input:focus {
+   border-color: #003459;
+   box-shadow: 0 0 8px rgba(217, 0, 255, 0.3);
+}
+
+/* Кнопка */
+.submit-btn {
+   width: 100%;
+   padding: 15px;
+   margin-top: 20px;
+   border: none;
+   border-radius: 12px;
+   background: linear-gradient(90deg, #09f62b 0%, #1248ed 100%);
+   color: white;
+   font-family: 'MedievalSharp', cursive; /* Специфічний шрифт з картинки */
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: transform 0.2s;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.submit-btn:hover {
+   transform: scale(1.02);
+   filter: brightness(1.1);
+}
+
+
+footer {
+   border-top: 1px solid #003459;
+   padding: 40px 20px 20px;
+   margin-top: 40px;
+   background-color:#cfeafc;
+}
+
+.footer-content {
+   display: flex;
+   justify-content: space-around   ;
+   gap: 60px;
+   margin-bottom: 30px;
+   flex-wrap: wrap;
+}
+
+.contact-item {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.contact-item h4 {
+   color:#3da0d9;
+   margin-bottom: 5px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.contact-item h4 i {
+   color: #3da0d9;
+}
+
+.contact-item a, .contact-item span {
+   color: #999;
+   text-decoration: none;
+   font-size: 0.9rem;
+   margin-left: 25px; /* Вирівнювання під текстом заголовка */
+}
+
+.contact-item a:hover {
+   color: white;
+}
+
+.discord-bar {
+   text-align: center;
+   padding: 15px 0;
+   border-top: 1px solid rgba(255,255,255,0.1);
+   border-bottom: 1px solid rgba(255,255,255,0.1);
+   margin-bottom: 20px;
+   color: #663b1f;
+}
+
+.discord-bar a {
+   color:#663b1f;
+   text-decoration: underline;
+}
+
+.copyright {
+   text-align: center;
+   font-size: 0.8rem;
+   color: #663b1f;
+}
+
+/* --- Адаптивність --- */
+
+@media (max-width:600px){
+
+.form-card{
+flex-direction: column;
+}
+
+h1{
+font-size:20px;
+}
+.form-card{
+  width: 400px;
+}
+}
+a{
+   text-decoration: none;
+ }
